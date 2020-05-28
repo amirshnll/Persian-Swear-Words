@@ -1,7 +1,7 @@
 # Persian-Swear-Words
-Persian Swear Words + .json Datasets
+Persian (Farsi) Swear Words + .json Datasets
 
-### author : Amir Shokri
+* author : Amir Shokri
 * email : amirsh.nll@gmail.com
 * update time : 29 May, 2020
 * . json format
