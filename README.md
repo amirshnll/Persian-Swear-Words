@@ -7,6 +7,8 @@ Persian (Farsi) Swear Words + .json Datasets
 * . json format
 * Detail : 1. Persian (Farsi) Swear Words. 2. Please fork and Push Request :)
 
+برخی از کلمات در ظاهر کلمات بد به حساب نمیان ولی برای کاربردهای خاص ممکنه نیاز به فیلتر شدن داشته باشن که هر کس با توجه به نیاز  باید شخصی سازی انجام بده و از این دیتاست استفاده کنه
+
 
 در صورت علاقه، به تکمیل شدن این دیتاست کمک کنید
 
