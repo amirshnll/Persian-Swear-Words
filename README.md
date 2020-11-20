@@ -1,11 +1,14 @@
 # Persian-Swear-Words
 Persian (Farsi) Swear Words + .json Datasets
 
-* author : Amir Shokri
-* email : amirsh.nll@gmail.com
-* update time : 29 May, 2020
-* . json format
-* Detail : 1. Persian (Farsi) Swear Words. 2. Please fork and Push Request :)
+* Author: Amir Shokri
+* Author Email: amirsh.nll@gmail.com
+* Last Update: 29 May, 2020
+* Data format: JSON Data
+* Contribute: Fork and Push Requests :)
+
+This is a to-be-complete list of Persian Swears you can use in your production to filter unwanted content.
+Wordlist is available in JSON format and there is also a helper class written in PHP to assist you how to use this datas. 
 
 برخی از کلمات در ظاهر کلمات بد به حساب نمیان ولی برای کاربردهای خاص ممکنه نیاز به فیلتر شدن داشته باشن که هر کس با توجه به نیاز  باید شخصی سازی انجام بده و از این دیتاست استفاده کنه
 
