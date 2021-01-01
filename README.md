@@ -16,9 +16,8 @@ Wordlist is available in JSON format and there is also a helper class written in
 
 از این دیتاست در فیلتر کردن متن ها در پروژه های خود استفاده کنید و متون پاک و سالمی را داشته باشید
 
-** ** 
-** ** 
-** ** 
+<br />
+<br />
 
 ### Other datasets collected by me
 * [Persian-Swear-Words](https://github.com/amirshnll/Persian-Swear-Words/)
