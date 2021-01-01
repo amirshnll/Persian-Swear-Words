@@ -15,3 +15,15 @@ Wordlist is available in JSON format and there is also a helper class written in
 در صورت علاقه، به تکمیل شدن این دیتاست کمک کنید
 
 از این دیتاست در فیلتر کردن متن ها در پروژه های خود استفاده کنید و متون پاک و سالمی را داشته باشید
+
+** ** 
+** ** 
+** ** 
+
+### Other datasets collected by me
+* [Persian-Swear-Words](https://github.com/amirshnll/Persian-Swear-Words/)
+* [persian-stop-word](https://github.com/amirshnll/persian-stop-word/)
+* [persian-sms-spam-word](https://github.com/amirshnll/persian-sms-spam-word/)
+* [tsetmc-dataset](https://github.com/amirshnll/tsetmc-dataset/)
+* [persianwordjson](https://github.com/amirshnll/persianwordjson/)
+* [English-Persian-Word-Database](https://github.com/amirshnll/English-Persian-Word-Database/)
