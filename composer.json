@@ -1,0 +1,14 @@
+{
+    "name": "amirshnll/persian-swear-words",
+    "description": "This is a to-be-complete list of Persian Swears you can use in your production to filter unwanted content. Wordlist is available in JSON format and there is also a helper class written in PHP to assist you how to use this datas.",
+    "type": "dataset",
+    "license": "MIT License",
+    "authors": [
+        {
+            "name": "Amir Shokri",
+            "email": "amirsh.nll@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
