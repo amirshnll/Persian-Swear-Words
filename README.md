@@ -27,8 +27,13 @@ Wordlist is available in JSON format and there is also a helper class written in
 <br />
 
 ### Installation
+#### composer
 ```
 composer require amirshnll/persian-swear-words
+```
+#### npm
+```
+npm i persian-swear-words
 ```
 
 <br />
@@ -38,6 +43,7 @@ composer require amirshnll/persian-swear-words
 * https://awesomeopensource.com/projects/persian
 * https://twitter.com/SamadiPour/status/1362702419252178945?s=20
 * https://packagist.org/packages/amirshnll/persian-swear-words
+* https://www.npmjs.com/package/persian-swear-words
 
 <br />
 
