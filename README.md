@@ -25,11 +25,17 @@ Wordlist is available in JSON format and there is also a helper class written in
 </div>
 
 
+### Installation
+```
+composer require amirshnll/persian-swear-words
+```
+
 
 ### Related Link
 * https://jadi.net/2020/11/mondays-99-08/
 * https://awesomeopensource.com/projects/persian
 * https://twitter.com/SamadiPour/status/1362702419252178945?s=20
+* https://packagist.org/packages/amirshnll/persian-swear-words
 
 <br />
 <br />
