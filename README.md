@@ -12,7 +12,7 @@ Wordlist is available in JSON format and there is also a helper class written in
 
 <div dir="rtl">
 
-** یادداشت ها:
+**یادداشت ها:**
 
 برخی از کلمات در ظاهر کلمات بد به حساب نمیان ولی برای کاربردهای خاص ممکنه نیاز به فیلتر شدن داشته باشن که هر کس با توجه به نیاز  باید شخصی سازی انجام بده و از این دیتاست استفاده کنه
 
@@ -23,6 +23,8 @@ Wordlist is available in JSON format and there is also a helper class written in
 از ارسال PR های کوچک خودداری کنید و مشارکت  مفیدتری داشته باشید.
 
 </div>
+
+
 
 ### Related Link
 * https://jadi.net/2020/11/mondays-99-08/
