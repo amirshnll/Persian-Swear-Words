@@ -12,6 +12,8 @@ Wordlist is available in JSON format and there is also a helper class written in
 
 <div dir="rtl">
 
+** یادداشت ها:
+
 برخی از کلمات در ظاهر کلمات بد به حساب نمیان ولی برای کاربردهای خاص ممکنه نیاز به فیلتر شدن داشته باشن که هر کس با توجه به نیاز  باید شخصی سازی انجام بده و از این دیتاست استفاده کنه
 
 در صورت علاقه، به تکمیل شدن این دیتاست کمک کنید
@@ -25,6 +27,7 @@ Wordlist is available in JSON format and there is also a helper class written in
 ### Related Link
 * https://jadi.net/2020/11/mondays-99-08/
 * https://awesomeopensource.com/projects/persian
+* https://twitter.com/SamadiPour/status/1362702419252178945?s=20
 
 <br />
 <br />
