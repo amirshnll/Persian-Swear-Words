@@ -3,7 +3,7 @@ Persian (Farsi) Swear Words + .json Datasets
 
 * Author: Amir Shokri
 * Author Email: amirsh.nll@gmail.com
-* Last Update: 23 February, 2021
+* Last Update: 8 June, 2021
 * Data format: JSON Data
 * Contribute: Fork and Push Requests :)
 
