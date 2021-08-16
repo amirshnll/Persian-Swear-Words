@@ -6,6 +6,7 @@ Persian (Farsi) Swear Words + .json Datasets
 * Last Update: 8 June, 2021
 * Data format: JSON Data
 * Contribute: Fork and Push Requests :)
+* DOI : 10.34740/kaggle/dsv/2094967
 
 **Note:** This is a to-be-complete list of Persian Swears you can use in your production to filter unwanted content.
 Wordlist is available in JSON format and there is also a helper class written in PHP to assist you how to use this datas. 
