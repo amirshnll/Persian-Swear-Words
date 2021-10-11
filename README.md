@@ -47,7 +47,7 @@ npm i persian-swear-words
 ```
 
 ### Usage
-#### PHP [:link Class](PersianSwear.php)
+#### PHP [ 🔗 Class ](PersianSwear.php)
 ```
 require('PersianSwear.php');
 $persianswear = new PersianSwear();
@@ -110,7 +110,7 @@ echo $persianswear->filter_words('تو هیز هستی', "&"); // تو & هست�
 
 echo $persianswear->tostring(); // show all swear words
 ```
-#### Python [:link Class](PersianSwear.py)
+#### Python [ 🔗 Class ](PersianSwear.py)
 ```
 persianswear = PersianSwear()
 
@@ -135,7 +135,7 @@ print(persianswear.filter_words('تو هیز هستی', '&')) # تو & هستی
 
 print(persianswear.tostring()) # show all swear words
 ```
-#### Javascript [:link](PersianSwear.js)
+#### Javascript [  🔗 Function ](PersianSwear.js)
 ```
 console.log(PersianSwear.is_bad('خر')); // true
 console.log(PersianSwear.is_bad('امروز')); // false
