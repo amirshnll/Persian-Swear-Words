@@ -1,8 +1,8 @@
 {
   "name": "persian-swear-words",
-  "version": "1.0.1",
-  "description": "This is a to-be-complete list of Persian Swears you can use in your production to filter unwanted content. Wordlist is available in JSON format and there is also a helper class written in PHP to assist you how to use this datas.",
-  "main": "index.js",
+  "version": "1.3",
+  "description": "unwanted content. Wordlist is available in JSON format and there is also a helper function written in JavaScript to assist you how to use this datas.",
+  "main": "PersianSwear.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
