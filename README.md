@@ -164,6 +164,7 @@ console.log(PersianSwear.filter_words('تو هیز هستی', '&')); // تو & �
 * https://twitter.com/SamadiPour/status/1362702419252178945?s=20
 * https://packagist.org/packages/amirshnll/persian-swear-words
 * https://www.npmjs.com/package/persian-swear-words
+* https://github.com/mmdbalkhi/Sansorchi
 
 <br />
 
