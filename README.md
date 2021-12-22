@@ -185,3 +185,5 @@ Donate (Ethereum Address) : 0x2a77dAB50D76A2aE0A3A7572Ee2Fc34d5F94b3dB
 * [Covid-patient-datasets](https://github.com/amirshnll/Covid-patient-datasets/)
 * [ibto-datasets](https://github.com/amirshnll/ibto-datasets)
 * [persian-slang](https://github.com/amirshnll/persian-slang)
+* [persian-news-dataset](https://github.com/amirshnll/persian-news-dataset)
+* [persian-sms-dataset](https://github.com/amirshnll/persian-sms-dataset)
