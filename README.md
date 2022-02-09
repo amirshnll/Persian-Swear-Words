@@ -158,6 +158,14 @@ console.log(PersianSwear.filter_words('تو هیز هستی', '&')); // تو & �
 
 <br />
 
+
+<p dir="rtl">از این دیتاست و کلمات این دیتاست می توانید برای فیلتر کردن کامنت ها و پیام های اینستاگرامتون هم استفاده کنید:</p>
+
+https://youtu.be/8YNCmrB5Y0M
+
+
+<br />
+
 ### Related Link
 * https://jadi.net/2020/11/mondays-99-08/
 * https://awesomeopensource.com/projects/persian
