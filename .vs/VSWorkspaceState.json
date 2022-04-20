@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\PersianSwear-CSharp"
+    "\\PersianSwear-CSharp",
+    "\\PersianSwear-CSharp\\PersianSwear"
   ],
-  "SelectedNode": "\\PersianSwear.ipynb",
+  "SelectedNode": "\\PersianSwear-CSharp\\PersianSwear\\FilterPersianWords.cs",
   "PreviewInSolutionExplorer": false
 }

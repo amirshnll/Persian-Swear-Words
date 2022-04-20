@@ -12,6 +12,12 @@ public class FilterPersianWords
 
     internal static string Path = $"{Environment.CurrentDirectory}\\data.json";
     internal Words Words;
+
+    /// <summary>
+    /// Create New Filter For Persian Words
+    /// </summary>
+    /// <param name="customPath">Optional Custom Path For Json File</param>
+    /// <exception cref="ArgumentException">If Json File Is Corrupted This Exception Will Throw</exception>
     public FilterPersianWords(string? customPath = "")
     {
         if (!string.IsNullOrEmpty(customPath))
