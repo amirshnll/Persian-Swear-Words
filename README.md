@@ -158,6 +158,29 @@ console.log(PersianSwear.filter_words('تو هیز هستی', '&')); // تو & �
 
 <br />
 
+#### C# [  🔗 Helper ](PersianSwear-CSharp)
+
+### Create Filter 
+First of All You Need To Create Instance of **FilterPersianWords**
+
+`var filter  = new FilterPersianWords();`
+
+if you have any optional json file path you can pass it down to constructor.
+
+### Use Functions
+
+ - Is a **single word** bad?
+
+> `var isBadWord = filter.IsBadWord("yourWord");`
+- Is a **multi line string** bad?
+>`var isBadSentence = filter.IsBadSentence("your long sentence");`
+- **Get all bad words** inside of string 
+>`var badList = filter.GetBadWords("your long sentence");`
+- **Remove All Bad words** From String
+>`var clearedString = filter.RemoveBadWords("your bad sentence");`
+>>This Method Will not change any data from string except the bad words.
+
+<br />
 
 <p dir="rtl">از این دیتاست و کلمات این دیتاست می توانید برای فیلتر کردن کامنت ها و پیام های اینستاگرامتون هم استفاده کنید:</p>
 
