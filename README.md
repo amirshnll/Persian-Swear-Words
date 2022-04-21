@@ -180,7 +180,7 @@ if you have any optional json file path you can pass it down to constructor.
 >`var clearedString = filter.RemoveBadWords("your bad sentence");`
 >>This Method Will not change any data from string except the bad words.
 
-<br />
+<br /><br />
 
 <p dir="rtl">از این دیتاست و کلمات این دیتاست می توانید برای فیلتر کردن کامنت ها و پیام های اینستاگرامتون هم استفاده کنید:</p>
 
