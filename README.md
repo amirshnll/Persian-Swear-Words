@@ -33,6 +33,7 @@ Persian (Farsi) Swear Words + .json Datasets
 * PHP
 * Python
 * Javascript
+* C#
 
 <br />
 
