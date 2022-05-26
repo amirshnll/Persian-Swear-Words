@@ -4,7 +4,6 @@ Author : Sorosh Safari @coci
 created date : 7 October, 2021
 updated date : 11 October, 2021
 """
-
 class PersianSwear(object):
 	def __init__(self):
 		self.data = json.load(open('data.json'))
@@ -37,10 +36,12 @@ class PersianSwear(object):
 
 	# return boolean
 	def is_bad(self, text):
+		text=text.replace("\u200c","")
 		return text in self.data['word']
 
 	# return boolean
 	def has_swear(self, text):
+		text=text.replace("\u200c","")
 		if(self.is_empty()):
 			return text
 
