@@ -19,14 +19,12 @@ class PersianSwear(object):
 		return text
 	# return string
 	def filter_words(self, ignoreOT, text , symbol="*"):
-		if ignoreOT:
-			text=self.ignoreSY(text)
 		if(self.is_empty()):
 			return text
 
 		text = text.split()
 		for i in range(len(text)):
-			if text[i] in self.data['word']:
+			if text[i] in self.data['word'] or (ignoreOT and self.ignoreSY(text[i]) in self.data['word']):
 				text[i] = symbol
 
 		return " ".join(text)
