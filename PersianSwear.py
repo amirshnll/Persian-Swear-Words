@@ -18,7 +18,7 @@ class PersianSwear(object):
 					text=text.replace(i,'')
 		return text
 	# return string
-	def filter_words(self, ignoreOT, text , symbol="*"):
+	def filter_words(self, text , symbol="*" , ignoreOT=False):
 		if(self.is_empty()):
 			return text
 
@@ -44,14 +44,14 @@ class PersianSwear(object):
 		self.data['word'].remove(text)	
 
 	# return boolean
-	def is_bad(self,ignoreOT, text):
+	def is_bad(self, text , ignoreOT=False):
 		if ignoreOT:
 			text=self.ignoreSY(text)
 		text=text.replace("\u200c","")
 		return text in self.data['word']
 
 	# return boolean
-	def has_swear(self,ignoreOT, text):
+	def has_swear(self, text , ignoreOT=False):
 		if ignoreOT:
 			text=self.ignoreSY(text)
 		text=text.replace("\u200c","")
