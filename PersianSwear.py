@@ -4,12 +4,23 @@ Author : Sorosh Safari @coci
 created date : 7 October, 2021
 updated date : 11 October, 2021
 """
+import json
+from string import punctuation
 class PersianSwear(object):
 	def __init__(self):
 		self.data = json.load(open('data.json'))
 
+	#Rmove punctuation characters from text
 	# return string
-	def filter_words(self, text, symbol="*"):
+	def ignoreSY(self, text):
+		for i in punctuation:
+				if i in text:
+					text=text.replace(i,'')
+		return text
+	# return string
+	def filter_words(self, ignoreOT, text , symbol="*"):
+		if ignoreOT:
+			text=self.ignoreSY(text)
 		if(self.is_empty()):
 			return text
 
@@ -35,12 +46,16 @@ class PersianSwear(object):
 		self.data['word'].remove(text)	
 
 	# return boolean
-	def is_bad(self, text):
+	def is_bad(self,ignoreOT, text):
+		if ignoreOT:
+			text=self.ignoreSY(text)
 		text=text.replace("\u200c","")
 		return text in self.data['word']
 
 	# return boolean
-	def has_swear(self, text):
+	def has_swear(self,ignoreOT, text):
+		if ignoreOT:
+			text=self.ignoreSY(text)
 		text=text.replace("\u200c","")
 		if(self.is_empty()):
 			return text
