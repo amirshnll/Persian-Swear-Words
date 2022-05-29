@@ -115,24 +115,39 @@ echo $persianswear->tostring(); // show all swear words
 ```
 persianswear = PersianSwear()
 
-print(persianswear.is_bad('خر')) # True
+print(persianswear.is_bad(,'خر',ignoreOT=False )) # True
 
-print(persianswear.is_bad('امروز')) # False
+print(persianswear.is_bad('امروز',ignoreOT=False )) # False
 
-print(persianswear.is_bad('چرت و پرت')) # False
+print(persianswear.is_bad('چرت و پرت',ignoreOT=False )) # False
 
 persianswear.add_word('چرت و پرت')
-print(persianswear.is_bad('چرت و پرت')) # True
+print(persianswear.is_bad('چرت و پرت' , ignoreOT=False )) # True
 
-print(persianswear.has_swear('تو دوست من هستی')) # False
+print(persianswear.has_swear('تو دوست من هستی' , ignoreOT=False )) # False
 
-print(persianswear.has_swear('تو هیز هستی')) # True
+print(persianswear.has_swear('تو هیز هستی' , ignoreOT=False )) # True
 
-print(persianswear.filter_words('تو دوست من هستی')) # تو دوست من هستی
+print(persianswear.filter_words('تو دوست من هستی' , ignoreOT=False )) # تو دوست من هستی
 
-print(persianswear.filter_words('تو هیز هستی')) # تو * هستی
+print(persianswear.filter_words('تو هیز هستی' , ignoreOT=False )) # تو * هستی
 
-print(persianswear.filter_words('تو هیز هستی', '&')) # تو & هستی
+print(persianswear.filter_words('تو هیز هستی', '&' , ignoreOT=False )) # تو & هستی
+
+
+print(persianswear.is_bad('خ.ر' , ignoreOT=True )) # True
+
+print(persianswear.is_bad( 'ام.روز' , ignoreOT=True )) # False
+
+print(persianswear.has_swear('تو دو.ست من هستی' , ignoreOT=True )) # False
+
+print(persianswear.has_swear('تو اسک.ل هستی' , ignoreOT=True )) # True
+
+print(persianswear.filter_words('تو دو.ست من هستی',ignoreOT=True )) # تو دو.ست من هستی
+
+print(persianswear.filter_words('تو هی.ز هستی',ignoreOT=True )) # تو * هستی
+
+print(persianswear.filter_words('تو هی.ز هس.تی' , ignoreOT=True )) # تو * هس.تی
 
 print(persianswear.tostring()) # show all swear words
 ```
