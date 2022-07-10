@@ -1,6 +1,6 @@
 {
   "name": "persian-swear-words",
-  "version": "1.3.0",
+  "version": "1.6.1",
   "description": "unwanted content. Wordlist is available in JSON format and there is also a helper function written in JavaScript to assist you how to use this datas.",
   "main": "PersianSwear.js",
   "scripts": {
