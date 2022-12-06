@@ -9,6 +9,7 @@ Persian (Farsi) Swear Words + .json Datasets
 	* PHP
 	* Python
 	* Javascript
+	* Swift
 * Contribute: Fork and Push Requests :)
 * DOI : 10.34740/kaggle/dsv/2094967
 
@@ -34,6 +35,7 @@ Persian (Farsi) Swear Words + .json Datasets
 * Python
 * Javascript
 * C#
+* Swift
 
 <br />
 
@@ -195,6 +197,72 @@ if you have any optional json file path you can pass it down to constructor.
 - **Remove All Bad words** From String
 >`var clearedString = filter.RemoveBadWords("your bad sentence");`
 >>This Method Will not change any data from string except the bad words.
+
+<br /><br />
+
+#### Swift [  🔗 Classes and Protocol ](PersianSwear.swift)
+
+<div dir='rtl'>
+کلاس اصلی <code>PersianSwear</code> هست، که متدها داخلش پیاده‌سازی شده:
+
+<br>
+
+```swift
+// add word(s) to DataSet
+PersianSwear.shared.addWord("bad-word")
+PersianSwear.shared.addWords(["bad-word-1", "bad-word-2"])
+
+// remove word(s) from DataSet
+PersianSwear.shared.removeWord("bad-word")
+PersianSwear.shared.removeWords(["bad-word-1", "bad-word-2"])
+
+// check single word
+let isBadWord = PersianSwear.shared.isBadWord("single word")
+
+// check existing bad word in text
+let hasBadWord = PersianSwear.shared.hasBadWord("long text")
+
+// existing bad word in text
+let badWords = PersianSwear.shared.badWords(in: "long text")
+
+// replace bad words in text
+let newText = PersianSwear.shared.replaceBadWords(in: "long text", with: "****")
+```
+
+<br>
+
+یه پروتکل هم با اسم <code>PersianSwearDataLoader</code> داریم که کارش لود کردن کلمات هست:
+
+<br>
+
+```swift
+protocol PersianSwearDataLoader {
+	func loadWords(
+		_ completion: @escaping (Result<PersianSwear.Words, Error>) -> Void
+	)
+}
+```
+
+<br>
+
+برای نمونه، تایپ لود کننده کلمات از روی گیت‌هاب پیاده‌سازی شده. نمونه استفاده هم بصورت زیر هست:
+
+<br>
+
+```swift
+let loader = GithubPersianSwearDataLoader()
+PersianSwear.shared.loadWords(using: loader) { result in
+	switch result {
+	case .failure(let error):
+		print("Error:", error.localizedDescription)
+	case .success(let words):
+		print("Words:", words.count)
+	}
+}
+```
+
+</div>
+
 
 <br /><br />
 
