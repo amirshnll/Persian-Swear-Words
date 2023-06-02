@@ -1,4 +1,4 @@
-var words = [
+var words = new Set([
   "آب کیر",
   "آشغال",
   "آلت تناسلی",
@@ -300,57 +300,37 @@ var words = [
   "اوبی",
   "مادر سگ",
   "نگایدم",
-];
+]);
+
 var PersianSwear = {
-  initial: function () {
-    if (words.length == 0) PersianSwear.load_data();
-  },
-  load_data: function () {
-    var requestURL = "data.json";
-    var request = new XMLHttpRequest();
-    request.open("GET", requestURL);
-    request.responseType = "json";
-    request.send();
-    request.onload = function () {
-      var raw_file = request.response;
-      words = raw_file.word;
-    };
-  },
-  add_word: function (text) {
-    // return nothing
-    PersianSwear.initial();
-    const found = words.find((e) => e == text);
-    if (found == undefined) words.push(text);
-  },
-  remove_word: function (text) {
-    // return nothing
-    PersianSwear.initial();
-    words = words.filter((e) => e != text);
-  },
   is_bad: function (text) {
-    // return boolean
-    PersianSwear.initial();
-    const found = words.find((e) => e == text);
-    if (found == undefined) return false;
-    return true;
+    return words.has(text);
   },
   has_swear: function (text) {
-    // return boolean
-    PersianSwear.initial();
-    for (let index = 0; index < words.length; index++)
-      if (text.includes(words[index])) return true;
+    var text_splited = text.split(" ");
+    for (var i = 0; i < text_splited.length; i++) {
+      if (words.has(text_splited[i])) {
+        return true;
+      }
+    }
     return false;
   },
   filter_words: function (text, symbol = "*") {
-    // return string
     var text_result = "";
     var text_splited = text.split(" ");
     for (var i = 0; i < text_splited.length; i++) {
-      if (PersianSwear.is_bad(text_splited[i])) text_result += symbol;
-      else text_result += text_splited[i];
+      if (words.has(text_splited[i])) {
+        text_result += symbol.repeat(text_splited[i].length);
+      } else {
+        text_result += text_splited[i];
+      }
       text_result += " ";
     }
-
-    return text_result;
+    return text_result.trim();
   },
 };
+
+// Usage examples:
+console.log(PersianSwear.is_bad("سادیسمی")); // true
+console.log(PersianSwear.has_swear("This is a test")); // false
+console.log(PersianSwear.filter_words("This is a test")); // "This is a test"
