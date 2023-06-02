@@ -2,66 +2,60 @@ import json
 from string import punctuation
 
 
-class PersianSwear(object):
+class PersianSwear:
     def __init__(self):
-        self.data = json.load(open('data.json'))
+        with open("data.json") as file:
+            self.data = json.load(file)
+        self.swear_words = set(self.data["word"])
 
-    # Rmove punctuation characters from text
-    # return string
     def ignoreSY(self, text):
-        for i in punctuation:
-            if i in text:
-                text = text.replace(i, '')
-        return text
-    # return string
+        translator = str.maketrans("", "", punctuation)
+        return text.translate(translator)
 
     def filter_words(self, text, symbol="*", ignoreOT=False):
-        if(self.is_empty()):
+        if not self.swear_words:
             return text
 
-        text = text.split()
-        for i in range(len(text)):
-            if text[i] in self.data['word'] or (ignoreOT and self.ignoreSY(text[i]) in self.data['word']):
-                text[i] = symbol
+        words = text.split()
+        filtered_words = []
+        for word in words:
+            if word in self.swear_words or (
+                ignoreOT and self.ignoreSY(word) in self.swear_words
+            ):
+                filtered_words.append(symbol)
+            else:
+                filtered_words.append(word)
 
-        return " ".join(text)
+        return " ".join(filtered_words)
 
-    # return boolean
     def is_empty(self):
-        if(len(self.data['word']) < 1):
-            return True
-        return False
+        return not self.swear_words
 
-    # return nothing
-    def add_word(self, text):
-        self.data['word'].append(text)
+    def add_word(self, word):
+        self.swear_words.add(word)
+        self.data["word"].append(word)
 
-    # return nothing
-    def remove_word(self, text):
-        self.data['word'].remove(text)
+    def remove_word(self, word):
+        if word in self.swear_words:
+            self.swear_words.remove(word)
+        if word in self.data["word"]:
+            self.data["word"].remove(word)
 
-    # return boolean
     def is_bad(self, text, ignoreOT=False):
         if ignoreOT:
             text = self.ignoreSY(text)
         text = text.replace("\u200c", "")
-        return text in self.data['word']
+        return text in self.swear_words
 
-    # return boolean
     def has_swear(self, text, ignoreOT=False):
         if ignoreOT:
             text = self.ignoreSY(text)
         text = text.replace("\u200c", "")
-        if(self.is_empty()):
-            return text
+        if not self.swear_words:
+            return False
 
-        text = text.split()
-        for i in range(len(text)):
-            if text[i] in self.data['word']:
-                return True
+        words = text.split()
+        return any(word in self.swear_words for word in words)
 
-        return False
-
-    # return string
     def tostring(self):
-        return ' - '.join(self.data['word'])
+        return " - ".join(self.swear_words)
