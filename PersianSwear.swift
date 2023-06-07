@@ -5,7 +5,7 @@ final class PersianSwear {
     
     static let shared = PersianSwear(words: [])
     
-    private(set) var words: Words = hSet<String>()
+    private(set) var words: Words = Set<String>()
     
     init(words: Words = Set<String>()) {
         self.words = words
