@@ -1,18 +1,18 @@
 import Foundation
 
 final class PersianSwear {
-    private typealias Words = HashSet<String>
+    private typealias Words = Set<String>
     
     static let shared = PersianSwear(words: [])
     
-    private(set) var words: Words = HashSet<String>()
+    private(set) var words: Words = hSet<String>()
     
-    init(words: Words = HashSet<String>()) {
+    init(words: Words = Set<String>()) {
         self.words = words
     }
     
     convenience init(words: [String] = []) {
-        self.init(words: HashSet(words))
+        self.init(words: Set(words))
     }
     
     func loadWords(using loader: PersianSwearDataLoader, completion: @escaping (Result<Words, Error>) -> Void) {
@@ -38,7 +38,7 @@ final class PersianSwear {
     }
     
     func addWords(_ words: [String]) {
-        addWords(HashSet(words))
+        addWords(Set(words))
     }
     
     func removeWord(_ word: String) {
@@ -50,7 +50,7 @@ final class PersianSwear {
     }
     
     func removeWords(_ words: [String]) {
-        removeWords(HashSet(words))
+        removeWords(Set(words))
     }
     
     func isBadWord(_ word: String) -> Bool {
@@ -103,7 +103,7 @@ class GithubPersianSwearDataLoader: PersianSwearDataLoader {
             
             do {
                 let model = try JSONDecoder().decode(Model.self, from: data)
-                completion(.success(HashSet(model.word)))
+                completion(.success(Set(model.word)))
             } catch {
                 completion(.failure(error))
             }
