@@ -6,7 +6,8 @@ Persian (Farsi) Swear Words + .json Datasets
 * Last Update: 11 October, 2021
 * Data format: JSON Data
 * Functions Availabe :
-	* PHP
+	* Java
+    * PHP
 	* Python
 	* Javascript
 	* Swift
@@ -31,6 +32,7 @@ Persian (Farsi) Swear Words + .json Datasets
 
 </div>
 
+* Java
 * PHP
 * Python
 * Javascript
@@ -50,6 +52,32 @@ npm i persian-swear-words
 ```
 
 ### Usage
+
+#### Java [ 🔗 Class ](PersianSwear.java)
+```
+var persianSwear = new PersianSwear();
+
+// add word(s) to DataSet
+persianSwear.addWord("word");
+persianSwear.addWords(new String[]{"word1", "word2"});
+
+// remove word(s) from DataSet
+persianSwear.removeWord("word");
+persianSwear.removeWords(new String[]{"word1", "word2"});
+
+// check single word
+persianSwear.isBad("الا.غ "); // true
+persianSwear.isBad("امروز"); // false
+
+// check existing bad word in text
+persianSwear.hasSwear("تو هیز هستی");     // true
+persianSwear.hasSwear("تو دوست من هستی"); // false
+
+// replace bad words in text
+persianSwear.filterWords("تو هیز هستی");      // تو * هستی
+persianSwear.filterWords("تو هیز هستی", "&"); // تو & هستی
+```
+
 #### PHP [ 🔗 Class ](PersianSwear.php)
 ```
 require('PersianSwear.php');
