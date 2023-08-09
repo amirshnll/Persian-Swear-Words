@@ -1,0 +1,14 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/CodeInspection/Highlighting/SweaWarningsMode/@EntryValue">ShowAndRun</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=17abcd20_002Db945_002D4496_002Da55a_002D62ae9e95ccf0/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="FuzzyFilterPersianWordsTests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Namespace&gt;PersianSwear.Tests&lt;/Namespace&gt;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4cf04bc9_002D298f_002D4970_002D9e61_002D5f871855093b/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="GetSensitivePhrases_WhenCalledWithSensitiveSentence_ReturnsListOfSensitivePhrases #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;NUnit3x::E78517F0-75A5-4AD3-AD81-941BB4656B1D::net6.0::PersianSwear.Tests.FuzzyFilterPersianWordsTests.GetSensitivePhrases_WhenCalledWithSensitiveSentence_ReturnsListOfSensitivePhrases&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String>
+	
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b63a365e_002D92c3_002D45f8_002D95c6_002D0ef155b63ef8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GetSensitivePhrases_WhenCalledWithSensitiveSentence_ReturnsListOfSensitivePhrases" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;Project Location="/home/roham/projects/Persian-Swear-Words/PersianSwear-CSharp/PersianSwear.Tests" Presentation="&amp;lt;PersianSwear.Tests&amp;gt;" /&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
