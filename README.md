@@ -7,12 +7,13 @@ Persian (Farsi) Swear Words + .json Datasets
 - Last Update: 11 October, 2021
 - Data format: JSON Data
 - Functions Availabe :
-  - Java
-  - PHP
-  - Python
-  - Javascript
-  - Swift
-  - TypeScript
+	- Java
+	- PHP
+	- Python
+	- JavaScript
+	- TypeScript
+	- C#
+	- Swift
 - Contribute: Fork and Push Requests :)
 - DOI : 10.34740/kaggle/dsv/2094967
 
@@ -37,7 +38,8 @@ Persian (Farsi) Swear Words + .json Datasets
 - Java
 - PHP
 - Python
-- Javascript
+- JavaScript
+- TypeScript
 - C#
 - Swift
 
@@ -192,7 +194,7 @@ print(persianswear.filter_words('تو هی.ز هس.تی' , ignoreOT=True )) # ت
 print(persianswear.tostring()) # show all swear words
 ```
 
-#### Javascript [ 🔗 Function ](PersianSwear.js)
+#### JavaScript [ 🔗 Function ](PersianSwear.js)
 
 ```
 console.log(PersianSwear.is_bad('خر')); // true
@@ -216,7 +218,7 @@ console.log(PersianSwear.filter_words('تو هیز هستی', '&')); // تو & �
 
 <br />
 
-#### TypeScript [ 🔗 Function ](/PersianSwear-TypeScript)
+#### TypeScript [ 🔗 Function ](/PersianSwear-TypeScript/dist/)
 
 ```
 import { test, expect } from "@jest/globals";
