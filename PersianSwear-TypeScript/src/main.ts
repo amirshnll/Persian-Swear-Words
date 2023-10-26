@@ -1,4 +1,4 @@
-import dataset from "./data/data.json"
+import dataset from "./data/data.json";
 
 /**
  * Represents an interface for working with potentially offensive language, such as swear words or profanity.
@@ -32,7 +32,7 @@ interface ISwear {
    */
   hasSwear: (text: string) => boolean;
 
-  dataSet: Set<string>
+  dataSet: Set<string>;
 }
 
 const PersianSwear: ISwear = {
@@ -42,17 +42,13 @@ const PersianSwear: ISwear = {
   },
   filterWords: function (text, symbol) {
     const splitedWord = text.split(" ");
-    return splitedWord.map(word =>
-      this.isBad(word) ? symbol : word
-    ).join(" ");
+    return splitedWord
+      .map((word) => (this.isBad(word) ? symbol : word))
+      .join(" ");
   },
   hasSwear: function (text) {
     const splitedWord = text.split(" ");
-    return splitedWord.some(word =>
-      this.dataSet.has(word)
-    );
-  }
-
-
+    return splitedWord.some((word) => this.dataSet.has(word));
+  },
 };
 export default PersianSwear;

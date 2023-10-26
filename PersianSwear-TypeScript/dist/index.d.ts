@@ -1,1 +1,1 @@
-export { PersianSwear } from './main';
+export { PersianSwear } from "./main";

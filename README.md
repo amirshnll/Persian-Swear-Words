@@ -8,10 +8,11 @@ Persian (Farsi) Swear Words + .json Datasets
 - Data format: JSON Data
 - Functions Availabe :
   - Java
-    - PHP
+  - PHP
   - Python
   - Javascript
   - Swift
+  - TypeScript
 - Contribute: Fork and Push Requests :)
 - DOI : 10.34740/kaggle/dsv/2094967
 
@@ -211,6 +212,33 @@ console.log(PersianSwear.has_swear('تو هیز هستی')); // true
 console.log(PersianSwear.filter_words('تو دوست من هستی')); // تو دوست من هستی
 console.log(PersianSwear.filter_words('تو هیز هستی')); // تو * هستی
 console.log(PersianSwear.filter_words('تو هیز هستی', '&')); // تو & هستی
+```
+
+<br />
+
+#### TypeScript [ 🔗 Function ](/PersianSwear-TypeScript)
+
+```
+import { test, expect } from "@jest/globals";
+
+import { PersianSwear } from "../src";
+
+test("test check bad word", () => {
+  expect(PersianSwear.isBad("آشغال")).toBe(true);
+});
+test("test check not bad word", () => {
+  expect(PersianSwear.isBad("سلام")).toBe(false);
+});
+
+test("test check text no has bad word", () => {
+  expect(PersianSwear.hasSwear("سلام عزیزم")).toBe(false);
+});
+test("test check text has bad word", () => {
+  expect(PersianSwear.hasSwear("سلام کصافت")).toBe(true);
+});
+test("test check text has bad word and replace with symbol", () => {
+  expect(PersianSwear.filterWords("سلام کصافت خوبی", "*")).toBe("سلام * خوبی");
+});
 ```
 
 <br />
