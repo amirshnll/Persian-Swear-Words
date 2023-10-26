@@ -1,0 +1,1 @@
+export { PersianSwear } from './main';
