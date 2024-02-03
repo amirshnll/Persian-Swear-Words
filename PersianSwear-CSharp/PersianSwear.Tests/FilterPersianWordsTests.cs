@@ -89,8 +89,8 @@ public class FilterPersianWordsTests
     {
         var inSensitiveSentence = _helper.GenerateInSensitiveSentence();
         var result = _sut.RemoveSensitivePhrases(inSensitiveSentence);
-        Assert.AreEqual(inSensitiveSentence, result);
-    }
+		Assert.AreEqual(inSensitiveSentence.RemoveLinesInSentence().RemoveSeperatiorsInSentence(), result);
+	}
 
     [Test]
     public void RemoveSensitivePhrases_WhenCalledWithSensitiveSentence_ReturnsFixedSentence()
@@ -119,15 +119,15 @@ public class FilterPersianWordsTests
     [Test]
     public void GetSensitivePhrases_WhenCalledWithSensitiveSentence_ReturnsListOfSensitivePhrases()
     {
-        var sensitiveSentence = _helper.GenerateSensitiveSentence();
-        var result = _sut.GetSensitivePhrases(sensitiveSentence);
-        var sensitivePhrases = result as string[] ?? result.ToArray();
-        Assert.IsNotEmpty(sensitivePhrases);
-        foreach (var sensitivePhrase in sensitivePhrases)
-        {
-            Assert.IsTrue(_helper.DoesPhraseExistInFile(sensitivePhrase));
-        }
-    }
+		var sensitiveSentence = _helper.GenerateSensitiveSentence();
+		var result = _sut.GetSensitivePhrases(sensitiveSentence);
+		var sensitivePhrases = result as string[] ?? result.ToArray();
+		Assert.IsNotEmpty(sensitivePhrases);
+		foreach (var sensitivePhrase in sensitivePhrases)
+		{
+			Assert.IsTrue(_helper.DoesPhraseExistInFile(sensitivePhrase));
+		}
+	}
 
     [Test]
     [TestCase(null)]

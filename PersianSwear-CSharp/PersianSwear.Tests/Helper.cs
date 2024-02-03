@@ -26,27 +26,44 @@ public class Helper : ConfigLoader
         return "سلام";
     }
 
-    public string GenerateSensitiveSentence()
+	public string GenerateSensitiveSentence()
+	{
+		StringBuilder builder = new();
+		var separatorSelector = 0;
+		for (var i = 1; i < 10; i++)
+		{
+			var Separators = new string[] { " ", ".", "-", "_", ",", ";" };
+			var separator = Separators[separatorSelector];
+
+			builder.Append(GenerateSensitivePhrase() + separator);
+			builder.Append(GenerateInSensitivePhrase() + separator);
+			builder.AppendLine();
+
+			separatorSelector++;
+			if (separatorSelector == 5)
+				separatorSelector = 0;
+		}
+
+		return builder.ToString();
+	}
+
+	public string GenerateInSensitiveSentence()
     {
         StringBuilder builder = new();
-        for (var i = 0; i < 10; i++)
-        {
-            builder.Append(GenerateSensitivePhrase() + " ");
-            builder.Append(GenerateInSensitivePhrase() + " ");
-            builder.AppendLine();
-        }
+		var separatorSelector = 0;
+		for (var i = 0; i < 10; i++)
+		{
+			var Separators = new string[] { " ", ".", "-", "_", ",", ";" };
+			var separator = Separators[separatorSelector];
 
-        return builder.ToString();
-    }
-
-    public string GenerateInSensitiveSentence()
-    {
-        StringBuilder builder = new();
-        for (var i = 0; i < 10; i++)
-        {
-            builder.Append(GenerateInSensitivePhrase() + " ");
+			builder.Append(GenerateInSensitivePhrase() + separator);
             builder.AppendLine();
-        }
+			builder.AppendLine();
+
+			separatorSelector++;
+			if (separatorSelector == 5)
+				separatorSelector = 0;
+		}
 
         return builder.ToString();
     }
