@@ -203,23 +203,20 @@ print(persianswear.tostring()) # show all swear words
 Code link: [ 🔗 Function ](PersianSwear.js)
 
 ```
-console.log(PersianSwear.is_bad('خر')); // true
-console.log(PersianSwear.is_bad('امروز')); // false
+import PersianSwear from './PersianSwear.js';
 
-console.log(PersianSwear.is_bad('چرت و پرت')); // false
-PersianSwear.add_word('چرت و پرت');
-console.log(PersianSwear.is_bad('چرت و پرت')); // true
+const text1 = 'تو دوست من هستی';
+console.log(PersianSwear.hasSwear(text1)); // Output: false
 
-console.log(PersianSwear.is_bad('گاو')); // true
-PersianSwear.remove_word('گاو');
-console.log(PersianSwear.is_bad('گاو')); // false
+const text2 = 'تو هیز هستی';
+console.log(PersianSwear.hasSwear(text2)); // Output: true
 
-console.log(PersianSwear.has_swear('تو دوست من هستی')); // false
-console.log(PersianSwear.has_swear('تو هیز هستی')); // true
+const text3 = 'تو هیز هستی';
+const filteredText = PersianSwear.filterWords(text3);
+console.log(filteredText); // Output: تو * هستی
 
-console.log(PersianSwear.filter_words('تو دوست من هستی')); // تو دوست من هستی
-console.log(PersianSwear.filter_words('تو هیز هستی')); // تو * هستی
-console.log(PersianSwear.filter_words('تو هیز هستی', '&')); // تو & هستی
+const word = 'خر';
+console.log(PersianSwear.isBad(word)); // Output: true
 ```
 
 <br />

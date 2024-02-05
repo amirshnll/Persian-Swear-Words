@@ -1,7 +1,7 @@
 {
   "name": "persian-swear-words",
-  "version": "1.6.1",
-  "description": "unwanted content. Wordlist is available in JSON format and there is also a helper function written in JavaScript to assist you how to use this datas.",
+  "version": "2.1.0",
+  "description": "A comprehensive list of Persian swear words and phrases, provided in JSON format with a JavaScript helper function for easy integration.",
   "main": "PersianSwear.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,12 +14,20 @@
     "swear",
     "word",
     "persian",
-    "farsi"
+    "farsi",
+    "profanity",
+    "filter",
+    "content moderation"
   ],
   "author": "Amir Shokri <amirsh.nll@gmail.com> (https://ashokri.com)",
-  "license": "MIT",
+  "license": "Apache-2.0 license",
   "bugs": {
     "url": "https://github.com/amirshnll/Persian-Swear-Words/issues"
   },
-  "homepage": "https://github.com/amirshnll/Persian-Swear-Words#readme"
+  "homepage": "https://github.com/amirshnll/Persian-Swear-Words#readme",
+  "files": [
+    "PersianSwear.js",
+    "data.json",
+    "data.txt"
+  ]
 }

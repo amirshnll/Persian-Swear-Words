@@ -1,4 +1,4 @@
-var words = new Set([
+const words = new Set([
   "آب کیر",
   "آشغال",
   "آلت تناسلی",
@@ -302,35 +302,12 @@ var words = new Set([
   "نگایدم",
 ]);
 
-var PersianSwear = {
-  is_bad: function (text) {
-    return words.has(text);
-  },
-  has_swear: function (text) {
-    var text_splited = text.split(" ");
-    for (var i = 0; i < text_splited.length; i++) {
-      if (words.has(text_splited[i])) {
-        return true;
-      }
-    }
-    return false;
-  },
-  filter_words: function (text, symbol = "*") {
-    var text_result = "";
-    var text_splited = text.split(" ");
-    for (var i = 0; i < text_splited.length; i++) {
-      if (words.has(text_splited[i])) {
-        text_result += symbol.repeat(text_splited[i].length);
-      } else {
-        text_result += text_splited[i];
-      }
-      text_result += " ";
-    }
-    return text_result.trim();
+const PersianSwear = {
+  isBad: (text) => words.has(text),
+  hasSwear: (text) => text.split(" ").some(word => words.has(word)),
+  filterWords: (text, symbol = "*") => {
+    return text.split(" ").map(word => words.has(word) ? symbol.repeat(word.length) : word).join(" ");
   },
 };
 
-// Usage examples:
-console.log(PersianSwear.is_bad("سادیسمی")); // true
-console.log(PersianSwear.has_swear("This is a test")); // false
-console.log(PersianSwear.filter_words("This is a test")); // "This is a test"
+export default PersianSwear;
