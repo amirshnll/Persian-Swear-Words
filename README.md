@@ -1,21 +1,17 @@
 # Persian-Swear-Words
 
-Persian (Farsi) Swear Words + .json Datasets
+Persian (Farsi) Swear Words + ‍`.json` Datasets
 
-- Author: Amir Shokri
-- Author Email: amirsh.nll@gmail.com
-- Last Update: 11 October, 2021
-- Data format: JSON Data
-- Functions Availabe :
-	- Java
-	- PHP
-	- Python
-	- JavaScript
-	- TypeScript
-	- C#
-	- Swift
+- Functions Availabe:
+	- [Java](#java)
+	- [PHP](#php)
+	- [Python](#python)
+	- [JavaScript](#javascript)
+	- [TypeScript](#typescript)
+	- [C#](#csharp)
+	- [Swift](#swift)
 - Contribute: Fork and Push Requests :)
-- DOI : 10.34740/kaggle/dsv/2094967
+- DOI : `10.34740/kaggle/dsv/2094967`
 
 **Note:** This is a to-be-complete list of Persian Swears you can use in your production to filter unwanted content. Wordlist is available in JSON format.
 
@@ -23,25 +19,19 @@ Persian (Farsi) Swear Words + .json Datasets
 
 **یادداشت ها:**
 
-برخی از کلمات در ظاهر کلمات بد به حساب نمیان ولی برای کاربردهای خاص ممکنه نیاز به فیلتر شدن داشته باشن که هر کس با توجه به نیاز باید شخصی سازی انجام بده و از این دیتاست استفاده کنه
+این دیتاست شامل کلماتی است که ممکن است در برخی موارد نیاز به فیلترینگ داشته باشند. کاربران برای استفاده‌های خاص باید دیتاست را متناسب با نیازهای خود شخصی‌سازی کنند. تشویق می‌شود علاقه‌مندان در تکمیل این دیتاست مشارکت کنند و برای پروژه‌های خود از آن استفاده نمایند تا متون پاک و مناسبی داشته باشند. به جای ارسال PRهای کوچک، مشارکت‌های ارزشمندتری انجام دهید. همچنین، امکان اضافه کردن class یا function به زبان‌های برنامه‌نویسی مختلف با استفاده از این دیتاست وجود دارد.
 
-در صورت علاقه، به تکمیل شدن این دیتاست کمک کنید
-
-از این دیتاست در فیلتر کردن متن ها در پروژه های خود استفاده کنید و متون پاک و سالمی را داشته باشید
-
-از ارسال PR های کوچک خودداری کنید و مشارکت مفیدتری داشته باشید.
-
-به جز مشارکت در دیتاست می توانید به زبان برنامه نویسی مورد نظر خودتان class یا function با کمک این دیتاست بنویسید و به پروژه اضافه کنید. در حال حاضر توابع مربوط به زبان های زیر موجود است:
+در حال حاضر توابع مربوط به زبان های زیر موجود است:
 
 </div>
 
-- Java
-- PHP
-- Python
-- JavaScript
-- TypeScript
-- C#
-- Swift
+- [Java](#java)
+- [PHP](#php)
+- [Python](#python)
+- [JavaScript](#javascript)
+- [TypeScript](#typescript)
+- [C#](#csharp)
+- [Swift](#swift)
 
 <br />
 
