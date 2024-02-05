@@ -245,7 +245,7 @@ test("test check text has bad word and replace with symbol", () => {
 
 <br />
 
-#### C# 
+#### Csharp
 
 code link: [ 🔗 Helper ](PersianSwear-CSharp)
 
