@@ -51,7 +51,9 @@ npm i persian-swear-words
 
 ### Usage
 
-#### Java [ 🔗 Class ](PersianSwear.java)
+#### Java 
+
+code link: [ 🔗 Class ](PersianSwear.java)
 
 ```
 var persianSwear = new PersianSwear();
@@ -77,7 +79,9 @@ persianSwear.filterWords("تو هیز هستی");      // تو * هستی
 persianSwear.filterWords("تو هیز هستی", "&"); // تو & هستی
 ```
 
-#### PHP [ 🔗 Class ](PersianSwear.php)
+#### PHP
+
+code link: [ 🔗 Class ](PersianSwear.php)
 
 ```
 require('PersianSwear.php');
@@ -142,7 +146,9 @@ echo $persianswear->filter_words('تو هیز هستی', "&"); // تو & هست�
 echo $persianswear->tostring(); // show all swear words
 ```
 
-#### Python [ 🔗 Class ](PersianSwear.py)
+#### Python 
+
+code link: [ 🔗 Class ](PersianSwear.py)
 
 ```
 persianswear = PersianSwear()
@@ -184,7 +190,9 @@ print(persianswear.filter_words('تو هی.ز هس.تی' , ignoreOT=True )) # ت
 print(persianswear.tostring()) # show all swear words
 ```
 
-#### JavaScript [ 🔗 Function ](PersianSwear.js)
+#### JavaScript 
+
+code link: [ 🔗 Function ](PersianSwear.js)
 
 ```
 console.log(PersianSwear.is_bad('خر')); // true
@@ -208,7 +216,9 @@ console.log(PersianSwear.filter_words('تو هیز هستی', '&')); // تو & �
 
 <br />
 
-#### TypeScript [ 🔗 Function ](/PersianSwear-TypeScript/dist/)
+#### TypeScript 
+
+code link: [ 🔗 Function ](/PersianSwear-TypeScript/dist/)
 
 ```
 import { test, expect } from "@jest/globals";
@@ -235,7 +245,9 @@ test("test check text has bad word and replace with symbol", () => {
 
 <br />
 
-#### C# [ 🔗 Helper ](PersianSwear-CSharp)
+#### C# 
+
+code link: [ 🔗 Helper ](PersianSwear-CSharp)
 
 ### Create Filter
 
@@ -262,7 +274,9 @@ if you have any optional json file path you can pass it down to constructor.
 
 <br /><br />
 
-#### Swift [ 🔗 Classes and Protocol ](PersianSwear.swift)
+#### Swift 
+
+code link: [ 🔗 Classes and Protocol ](PersianSwear.swift)
 
 <div dir='rtl'>
 کلاس اصلی <code>PersianSwear</code> هست، که متدها داخلش پیاده‌سازی شده:
