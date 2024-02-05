@@ -12,12 +12,15 @@ Persian (Farsi) Swear Words + ‍`.json` Datasets
 	- [Swift](#swift)
 - Contribute: Fork and Push Requests :)
 - DOI : `10.34740/kaggle/dsv/2094967`
+- [`CONTRIBUTING.md`](CONTRIBUTING.md): Guidelines for contributing to the repository.
+- [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md): The code of conduct for participants in the repository.
+
 
 **Note:** This is a to-be-complete list of Persian Swears you can use in your production to filter unwanted content. Wordlist is available in JSON format.
 
 <div dir="rtl">
 
-**یادداشت ها:**
+**یادداشت‌ها:**
 
 این دیتاست شامل کلماتی است که ممکن است در برخی موارد نیاز به فیلترینگ داشته باشند. کاربران برای استفاده‌های خاص باید دیتاست را متناسب با نیازهای خود شخصی‌سازی کنند. تشویق می‌شود علاقه‌مندان در تکمیل این دیتاست مشارکت کنند و برای پروژه‌های خود از آن استفاده نمایند تا متون پاک و مناسبی داشته باشند. به جای ارسال PRهای کوچک، مشارکت‌های ارزشمندتری انجام دهید. همچنین، امکان اضافه کردن class یا function به زبان‌های برنامه‌نویسی مختلف با استفاده از این دیتاست وجود دارد.
 
@@ -35,25 +38,30 @@ Persian (Farsi) Swear Words + ‍`.json` Datasets
 
 <br />
 
-### Installation
+موارد بیشتر: 
+- [`CONTRIBUTING.md`](CONTRIBUTING.md): دستورالعمل‌هایی برای مشارکت در مخزن این پروژه
+- [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md): کد اخلاقی برای مشارکت‌کنندگان در مخزن این پروژه
 
-#### composer
+
+### Installation | دستورالعمل‌های نصب
+
+#### نصب با composer
 
 ```
 composer require amirshnll/persian-swear-words
 ```
 
-#### npm
+#### نصب با npm
 
 ```
 npm i persian-swear-words
 ```
 
-### Usage
+### Usage | روش‌های استفاده
 
-#### Java 
+#### Java | جاوا
 
-code link: [ 🔗 Class ](PersianSwear.java)
+Code link: [ 🔗 Class ](PersianSwear.java)
 
 ```
 var persianSwear = new PersianSwear();
@@ -79,9 +87,9 @@ persianSwear.filterWords("تو هیز هستی");      // تو * هستی
 persianSwear.filterWords("تو هیز هستی", "&"); // تو & هستی
 ```
 
-#### PHP
+#### PHP | پی‌اچ‌پی
 
-code link: [ 🔗 Class ](PersianSwear.php)
+Code link: [ 🔗 Class ](PersianSwear.php)
 
 ```
 require('PersianSwear.php');
@@ -146,9 +154,9 @@ echo $persianswear->filter_words('تو هیز هستی', "&"); // تو & هست�
 echo $persianswear->tostring(); // show all swear words
 ```
 
-#### Python 
+#### Python | پایتون
 
-code link: [ 🔗 Class ](PersianSwear.py)
+Code link: [ 🔗 Class ](PersianSwear.py)
 
 ```
 persianswear = PersianSwear()
@@ -190,9 +198,9 @@ print(persianswear.filter_words('تو هی.ز هس.تی' , ignoreOT=True )) # ت
 print(persianswear.tostring()) # show all swear words
 ```
 
-#### JavaScript 
+#### JavaScript | جاواسکریپت
 
-code link: [ 🔗 Function ](PersianSwear.js)
+Code link: [ 🔗 Function ](PersianSwear.js)
 
 ```
 console.log(PersianSwear.is_bad('خر')); // true
@@ -216,9 +224,9 @@ console.log(PersianSwear.filter_words('تو هیز هستی', '&')); // تو & �
 
 <br />
 
-#### TypeScript 
+#### TypeScript | تایپ‌اسکریپت
 
-code link: [ 🔗 Function ](/PersianSwear-TypeScript/dist/)
+Code link: [ 🔗 Function ](/PersianSwear-TypeScript/dist/)
 
 ```
 import { test, expect } from "@jest/globals";
@@ -245,9 +253,9 @@ test("test check text has bad word and replace with symbol", () => {
 
 <br />
 
-#### Csharp
+#### Csharp | سی‌شارپ
 
-code link: [ 🔗 Helper ](PersianSwear-CSharp)
+Code link: [ 🔗 Helper ](PersianSwear-CSharp)
 
 ### Create Filter
 
@@ -275,12 +283,12 @@ This Method Will not change any data from string except the bad words.
 
 <br /><br />
 
-#### Swift 
+#### Swift | سوئیفت
 
-code link: [ 🔗 Classes and Protocol ](PersianSwear.swift)
+Code link: [ 🔗 Classes and Protocol ](PersianSwear.swift)
 
 <div dir='rtl'>
-کلاس اصلی <code>PersianSwear</code> هست، که متدها داخلش پیاده‌سازی شده:
+کلاس اصلی <code>PersianSwear</code> هست، که متدها داخل آن پیاده‌سازی شده است:
 
 <br>
 
@@ -308,7 +316,7 @@ let newText = PersianSwear.shared.replaceBadWords(in: "long text", with: "****")
 
 <br>
 
-یه پروتکل هم با اسم <code>PersianSwearDataLoader</code> داریم که کارش لود کردن کلمات هست:
+یک پروتکل با اسم <code>PersianSwearDataLoader</code> که کارایی آن لود کردن کلمات هست وجود دارد:
 
 <br>
 
@@ -342,7 +350,7 @@ PersianSwear.shared.loadWords(using: loader) { result in
 
 <br /><br />
 
-### Related Link
+### Related Link |‌ لینک‌های مرتبط با پروژه
 
 - https://jadi.net/2020/11/mondays-99-08/
 - https://awesomeopensource.com/projects/persian
