@@ -161,7 +161,7 @@ Code link: [ 🔗 Class ](PersianSwear.py)
 ```
 persianswear = PersianSwear()
 
-print(persianswear.is_bad(,'خر',ignoreOT=False )) # True
+print(persianswear.is_bad('خر',ignoreOT=False )) # True
 
 print(persianswear.is_bad('امروز',ignoreOT=False )) # False
 
