@@ -4,7 +4,7 @@ Persian (Farsi) Swear Words + ‍`.json` Datasets
 
 - Functions Availabe:
 	- [Java](#java)
-    - [Go](#go)
+    	- [Go](#go)
 	- [PHP](#php)
 	- [Python](#python)
 	- [JavaScript](#javascript)
@@ -61,11 +61,11 @@ npm i persian-swear-words
 
 ### Usage | روش‌های استفاده
 
-#### Java | جاوا
+#### java
 
 Code link: [ 🔗 Class ](PersianSwear.java)
 
-```
+```java
 var persianSwear = new PersianSwear();
 
 // add word(s) to DataSet
@@ -88,11 +88,11 @@ persianSwear.hasSwear("تو دوست من هستی"); // false
 persianSwear.filterWords("تو هیز هستی");      // تو * هستی
 persianSwear.filterWords("تو هیز هستی", "&"); // تو & هستی
 ```
-#### Go | گو
+#### go
 
 Code link: [ 🔗 Function ](PersianSwear.go)
 
-```
+```go
 persianswear := NewPersianSwear()
 
 // add word(s) to DataSet
@@ -116,11 +116,11 @@ persianswear.FilterWords("تو هیز هستی")      // تو * هستی
 persianswear.FilterWords("تو هیز هستی", "&") // تو & هستی
 ```
 
-#### PHP | پی‌اچ‌پی
+#### php
 
 Code link: [ 🔗 Class ](PersianSwear.php)
 
-```
+```php
 require('PersianSwear.php');
 $persianswear = new PersianSwear();
 
@@ -183,11 +183,11 @@ echo $persianswear->filter_words('تو هیز هستی', "&"); // تو & هست�
 echo $persianswear->tostring(); // show all swear words
 ```
 
-#### Python | پایتون
+#### python
 
 Code link: [ 🔗 Class ](PersianSwear.py)
 
-```
+```python
 persianswear = PersianSwear()
 
 print(persianswear.is_bad('خر',ignoreOT=False )) # True
@@ -227,11 +227,11 @@ print(persianswear.filter_words('تو هی.ز هس.تی' , ignoreOT=True )) # ت
 print(persianswear.tostring()) # show all swear words
 ```
 
-#### JavaScript | جاواسکریپت
+#### javaScript
 
 Code link: [ 🔗 Function ](PersianSwear.js)
 
-```
+```javaScript
 import PersianSwear from './PersianSwear.js';
 
 const text1 = 'تو دوست من هستی';
@@ -250,11 +250,11 @@ console.log(PersianSwear.isBad(word)); // Output: true
 
 <br />
 
-#### TypeScript | تایپ‌اسکریپت
+#### typeScript
 
 Code link: [ 🔗 Function ](/PersianSwear-TypeScript/dist/)
 
-```
+```typeScript
 import { test, expect } from "@jest/globals";
 
 import { PersianSwear } from "../src";
@@ -279,7 +279,7 @@ test("test check text has bad word and replace with symbol", () => {
 
 <br />
 
-#### Csharp | سی‌شارپ
+#### csharp
 
 Code link: [ 🔗 Helper ](PersianSwear-CSharp)
 
@@ -309,7 +309,7 @@ This Method Will not change any data from string except the bad words.
 
 <br /><br />
 
-#### Swift | سوئیفت
+#### wwift
 
 Code link: [ 🔗 Classes and Protocol ](PersianSwear.swift)
 
