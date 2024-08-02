@@ -4,6 +4,7 @@ Persian (Farsi) Swear Words + ‍`.json` Datasets
 
 - Functions Availabe:
 	- [Java](#java)
+    - [Go](#go)
 	- [PHP](#php)
 	- [Python](#python)
 	- [JavaScript](#javascript)
@@ -29,6 +30,7 @@ Persian (Farsi) Swear Words + ‍`.json` Datasets
 </div>
 
 - [Java](#java)
+- [Go](#go)
 - [PHP](#php)
 - [Python](#python)
 - [JavaScript](#javascript)
@@ -85,6 +87,33 @@ persianSwear.hasSwear("تو دوست من هستی"); // false
 // replace bad words in text
 persianSwear.filterWords("تو هیز هستی");      // تو * هستی
 persianSwear.filterWords("تو هیز هستی", "&"); // تو & هستی
+```
+#### Go | گو
+
+Code link: [ 🔗 Function ](PersianSwear.go)
+
+```
+persianswear := NewPersianSwear()
+
+// add word(s) to DataSet
+persianswear.AddWord("word")
+persianswear.AddWords([]string{"word1", "word2"})
+
+// remove word(s) from DataSet
+persianswear.RemoveWord("word")
+persianswear.RemoveWords([]string{"word1", "word2"})
+
+// check single word
+persianswear.IsBad("الا.غ ") // true
+persianswear.IsBad("امروز") // false
+
+// check existing bad word in text
+persianswear.HasSwear("تو هیز هستی")     // true
+persianswear.HasSwear("تو دوست من هستی") // false
+
+// replace bad words in text
+persianswear.FilterWords("تو هیز هستی")      // تو * هستی
+persianswear.FilterWords("تو هیز هستی", "&") // تو & هستی
 ```
 
 #### PHP | پی‌اچ‌پی
