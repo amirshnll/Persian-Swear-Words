@@ -1,6 +1,6 @@
 {
   "name": "persian-swear-words",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "A comprehensive list of Persian swear words and phrases, provided in JSON format with a JavaScript helper function for easy integration.",
   "main": "PersianSwear.js",
   "scripts": {
