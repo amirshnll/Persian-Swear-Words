@@ -4,7 +4,7 @@ Persian (Farsi) Swear Words + ‍`.json` Datasets
 
 - Functions Availabe:
 	- [Java](#java)
-    	- [Go](#go)
+    - [Go](#go)
 	- [PHP](#php)
 	- [Python](#python)
 	- [JavaScript](#javascript)
