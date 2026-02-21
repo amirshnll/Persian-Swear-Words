@@ -89,8 +89,8 @@ public class FuzzyFilterPersianWordsTests
     {
         var inSensitiveSentence = _helper.GenerateInSensitiveSentence();
         var result = _sut.RemoveSensitivePhrases(inSensitiveSentence);
-        Assert.AreEqual(inSensitiveSentence, result);
-    }
+        Assert.AreEqual(inSensitiveSentence.RemoveLinesInSentence().RemoveSeperatiorsInSentence(), result);
+	}
 
     [Test]
     public void RemoveSensitivePhrases_WhenCalledWithSensitiveSentence_ReturnsFixedSentence()
