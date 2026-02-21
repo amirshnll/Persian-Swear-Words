@@ -26,6 +26,9 @@
     "jest": "^29.5.0",
     "ts-jest": "^29.1.0"
   },
+  "overrides": {
+    "js-yaml": "3.14.2"
+  },
   "author": "",
   "scripts": {
     "compile": "tsc --resolveJsonModule",
